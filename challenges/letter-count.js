@@ -1,3 +1,20 @@
+function letterCount(word) {
+  var newObjectArray = {};
+  for (var i = 0; i < word.length; i++) {
+      var character = word[i];
+      if(newObjectArray.hasOwnProperty(character)) {
+        newObjectArray[character]++;
+      } else {
+          newObjectArray[character] = 1;
+      }
+    }
+    return newObjectArray;
+};
+
+
+letterCount("Chelsea");
+
+
 /*
 
   Create a function `letterCount` that accepts a string, and finds the number of times each letter
