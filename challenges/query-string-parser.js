@@ -1,3 +1,19 @@
+function parseQueryString(qString) {
+    var newObject = {};
+
+    function splitString(qString, separator) {
+        var isSplit = qString.split("=");
+        newObject.push(isSplit);
+    }
+
+        // code.split("=");
+        // console.log(a=1);
+    }
+
+    //newObject.push();
+parseQueryString("a=21");
+
+
 /*
 
   Create a function `parseQueryString` that accepts a query string parameter as an argument, and
